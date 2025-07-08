@@ -1,62 +1,72 @@
 import React from "react";
+import {
+  FileBarChart2,
+  Hospital,
+  FlaskConical,
+  ShieldCheck,
+  // Capsule,
+} from "lucide-react";
+import { FaCapsules, FaCut } from "react-icons/fa";
 
 export function ModulesSection() {
-const modules = [
-  {
-    title: "Accounts",
-    icon: "pi pi-chart-bar",
-    description: "Manage your assets, liabilities, and equity accounts seamlessly.",
-  },
-  {
-    title: "Journal Entries",
-    icon: "pi pi-book",
-    description: "Record every financial transaction with accurate double entries.",
-  },
-  {
-    title: "Invoices",
-    icon: "pi pi-file",
-    description: "Create, send, and track invoices easily for your customers.",
-  },
-  {
-    title: "Configuration",
-    icon: "pi pi-sliders-h",
-    description: "Customize settings, users, and system preferences.",
-  },
-  {
-    title: "Payroll",
-    icon: "pi pi-wallet",
-    description: "Manage employee salaries, taxes, and payslips effortlessly.",
-  },
-  {
-    title: "Purchases",
-    icon: "pi pi-shopping-cart",
-    description: "Track supplier orders, payments, and delivery status.",
-  },
-  {
-    title: "Vouchers",
-    icon: "pi pi-credit-card",
-    description: "Generate payment, receipt, and adjustment vouchers.",
-  },
-  {
-    title: "Reports",
-    icon: "pi pi-chart-line",
-    description: "Get insightful financial and management reports.",
-  },
-];
+  const modules = [
+    {
+      title: "ERP (Accounts System)",
+      icon: <FileBarChart2 className="w-8 h-8 mb-3" />,
+      description:
+        "Comprehensive account management including assets, liabilities, equity, and invoicing—all in one place.",
+    },
+    {
+      title: "Hospital Information System",
+      icon: <Hospital className="w-8 h-8 mb-3" />,
+      description:
+        "A complete hospital management suite covering patient records, OPD/IPD, staff, billing, and administration.",
+    },
+    {
+      title: "Laboratory Module",
+      icon: <FlaskConical className="w-8 h-8 mb-3" />,
+      description:
+        "Manage lab tests, test appointments, results, and reporting with complete traceability.",
+    },
+    {
+      title: "Nafees Connection (Insurance)",
+      icon: <ShieldCheck className="w-8 h-8 mb-3" />,
+      description:
+        "Centralized system for managing insurance company data, claims processing, and policy integration.",
+    },
+    {
+      title: "Pharmacy Management",
+      icon: <FaCapsules className="w-8 h-8 mb-3" />,
+      description:
+        "Streamlined pharmacy operations: inventory, prescriptions, medicine sales, and vendor handling.",
+    },
+    {
+      title: "Musharaq",
+      icon: <FaCut className="w-8 h-8 mb-3 transform rotate-270"/>,
+      description:
+        "Comprehensive saloon management: appointments, services, stylists, and customer records.",
+    },
+  ];
   return (
     <React.Fragment>
-      <div className=" px-10 py-10 bg-gray-50">
-        <h2 className="text-4xl font-bold mb-6">Core Modules</h2>
-        <ul className="grid grid-cols-2 md:grid-cols-4 gap-6  text-white">
+      <div className="px-6 md:px-6 py-10 bg-gray-50">
+        <h2 className="text-4xl font-bold mb-14 text-gray-800 text-center">
+          Core Modules
+        </h2>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 text-white">
           {modules.map((module, index) => (
-             <li
-      key={index}
-      className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] rounded-lg py-8 px-4 shadow-lg hover:scale-105 transition-all"
-    >
-      <i className={`${module.icon} text-[20px] mb-3`}></i>
-      <h1 className="text-lg font-semibold mb-2">{module.title}</h1>
-      <p className="text-sm text-white opacity-90">{module.description}</p>
-    </li>
+            <li
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+              className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] rounded-2xl py-8 px-4 shadow-lg transform transition-transform duration-700 ease-in-out hover:scale-105 hover:shadow-2xl hover:-translate-y-1 text-center"
+            >
+              <div className="flex justify-center mb-4">{module.icon}</div>
+              <h1 className="text-lg font-semibold mb-2">{module.title}</h1>
+              <p className="text-sm text-white opacity-90">
+                {module.description}
+              </p>
+            </li>
           ))}
         </ul>
       </div>
