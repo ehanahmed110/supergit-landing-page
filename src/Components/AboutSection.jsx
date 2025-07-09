@@ -3,7 +3,7 @@ import React from "react";
 export function AboutSection() {
   return (
     <React.Fragment>
-      <div className="min-h-screen px-6 md:px-10 py-16 md:py-24 bg-white flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
+      <div className="min-h-screen px-6 md:px-10 py-10 bg-white flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent">
             About <span className="italic">Supergit</span> 

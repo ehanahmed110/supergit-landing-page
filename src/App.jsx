@@ -3,6 +3,7 @@ import { LandingPage } from './pages/LandingPage'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ProtectedRouter } from './Router/ProtectedRouter';
 
 function App() {
 useEffect(() => {
@@ -17,7 +18,7 @@ useEffect(() => {
 
   return (
     <React.Fragment>
-        <LandingPage />
+        <ProtectedRouter />
     </React.Fragment>
   )
 }

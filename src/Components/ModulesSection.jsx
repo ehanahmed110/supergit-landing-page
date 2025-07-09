@@ -14,13 +14,13 @@ export function ModulesSection() {
       title: "ERP (Accounts System)",
       icon: <FileBarChart2 className="w-8 h-8 mb-3" />,
       description:
-        "Comprehensive account management including assets, liabilities, equity, and invoicing—all in one place.",
+        "Streamline your operations with an integrated ERP system for finance, HR, procurement, and more..",
     },
     {
       title: "Hospital Information System",
       icon: <Hospital className="w-8 h-8 mb-3" />,
       description:
-        "A complete hospital management suite covering patient records, OPD/IPD, staff, billing, and administration.",
+        "A comprehensive solution for managing all aspects of your hospital, including patient records, appointments, billing, and more..",
     },
     {
       title: "Laboratory Module",
@@ -29,10 +29,10 @@ export function ModulesSection() {
         "Manage lab tests, test appointments, results, and reporting with complete traceability.",
     },
     {
-      title: "Nafees Connection (Insurance)",
+      title: "NPHIES Connect",
       icon: <ShieldCheck className="w-8 h-8 mb-3" />,
       description:
-        "Centralized system for managing insurance company data, claims processing, and policy integration.",
+        "Seamlessly integrate with NPHIES for efficient claims processing and compliance with CCHI standards.",
     },
     {
       title: "Pharmacy Management",

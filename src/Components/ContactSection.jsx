@@ -5,7 +5,7 @@ export function ContactSection() {
   return (
     <React.Fragment>
       <footer className="bg-black text-gray-300 px-10 pt-16 pb-4 rounded-t-4xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mb-10">
           <div>
             <h3 className="text-xl font-semibold mb-8 text-white">
               Navigation
@@ -48,7 +48,7 @@ export function ContactSection() {
             <h3 className="text-xl font-semibold mb-8 text-white">
               Contact Us:
             </h3>
-            <p className="mb-5 text-sm flex space-x-2"> <i className="pi pi-envelope"></i><span> Email: support@supergit.com</span></p>
+            <p className="mb-5 text-sm flex space-x-2"> <i className="pi pi-envelope"></i><span> Email: supergit@gmail.com</span></p>
             <p className="mb-5 text-sm flex space-x-2"><i className="pi pi-phone"></i> <span>Phone: +92-348-0095267 </span> </p>
             <p className="mb-4 text-sm flex space-x-2"> <i className="pi pi-map-marker"></i><span> Address: Gujranwala, Pakistan </span></p>
           </div>

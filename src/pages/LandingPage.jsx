@@ -20,7 +20,7 @@ export function LandingPage() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
   const scrollToTop = () => {
     const el = document.getElementById("hero");
     if (el) {
@@ -29,9 +29,6 @@ export function LandingPage() {
   };
   return (
     <React.Fragment>
-      <div>
-        <NavBar />
-      </div>
       <div>
         <section id="hero">
           <HeroSection />
@@ -62,13 +59,7 @@ export function LandingPage() {
           <WhyChooseSection />
         </section>
       </div>
-      <div className="mt-8">
-        <section id="contact">
-          <ContactSection />
-        </section>
-      </div>
 
-            {/* Scroll To Top Button */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
@@ -78,7 +69,6 @@ export function LandingPage() {
           <ArrowUp size={24} className="font-extrabold" />
         </button>
       )}
-
     </React.Fragment>
   );
 }
