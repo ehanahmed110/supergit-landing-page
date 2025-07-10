@@ -10,7 +10,7 @@ export function NavBar() {
   const links = [
     { label: "Home", id: "hero", path: "/" },
     { label: "About", id: "about", path: "/about" },
-    { label: "Modules", id: "modules", path: "/modules" },
+    { label: "Our Services", id: "modules", path: "/modules" },
     { label: "How It Works", id: "how", path: "/howWork" },
     { label: "Demo", id: "demo", path: "/demo" },
     { label: "Why Supergit", id: "why", path: "/whySupergit" },
