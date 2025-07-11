@@ -37,10 +37,26 @@ export function ContactSection() {
           <div>
             <h3 className="text-xl font-semibold mb-8 text-white">Resources</h3>
             <ul className="space-y-3 text-sm font-medium">
-              <li><a href="#faq" className="hover:text-white    ">FAQs</a></li>
-              <li><a href="#terms" className="hover:text-white  ">Terms & Conditions</a></li>
-              <li><a href="#privacy" className="hover:text-white">Privacy Policy</a></li>
-              <li><a href="#support" className="hover:text-white">Support</a></li>
+              <li>
+                <a href="#faq" className="hover:text-white    ">
+                  FAQs
+                </a>
+              </li>
+              <li>
+                <a href="#terms" className="hover:text-white  ">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li>
+                <a href="#privacy" className="hover:text-white">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#support" className="hover:text-white">
+                  Support
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -48,22 +64,33 @@ export function ContactSection() {
             <h3 className="text-xl font-semibold mb-8 text-white">
               Contact Us:
             </h3>
-            <p className="mb-5 text-sm flex space-x-2"> <i className="pi pi-envelope"></i><span> Email: supergit@gmail.com</span></p>
-            <p className="mb-5 text-sm flex space-x-2"><i className="pi pi-phone"></i> <span>Phone: +92-348-0095267 </span> </p>
-            <p className="mb-4 text-sm flex space-x-2"> <i className="pi pi-map-marker"></i><span> Address: Gujranwala, Pakistan </span></p>
+            <p className="mb-5 text-sm flex space-x-2">
+              {" "}
+              <i className="pi pi-envelope"></i>
+              <span> Email: supergit@gmail.com</span>
+            </p>
+            <p className="mb-5 text-sm flex space-x-2">
+              <i className="pi pi-phone"></i>{" "}
+              <span>Phone: +92-348-0095267 </span>{" "}
+            </p>
+            <p className="mb-4 text-sm flex space-x-2">
+              {" "}
+              <i className="pi pi-map-marker"></i>
+              <span> Address: Gujranwala, Pakistan </span>
+            </p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-8 text-white">Feedback</h3>
             <form>
               <textarea
-                className="w-full p-2 rounded  text-white border border-white mb-2"
+                className="w-full p-2 rounded bg-transparent text-white border border-white mb-2 custom-placeholder"
                 rows="3"
                 placeholder="Your feedback..."
               ></textarea>
               <ShareButton
                 label="Submit"
                 variant="transparent"
-                className="!px-8 !py-2 hover:!bg-gradient-to-r from-[#f14f3e] to-[#fab768] hover:!text-white hover:!border-transparent"
+                className="!px-8 !py-2 !text-white !bg-gradient-to-r from-[#f14f3e] to-[#fab768] hover:!text-white hover:!border-transparent border-[#fab768]"
               />
             </form>
           </div>

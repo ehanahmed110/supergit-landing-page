@@ -1,67 +1,115 @@
 import React from "react";
-import { Stethoscope, Lightbulb, DollarSign, Target } from "lucide-react";
+import {
+  Stethoscope,
+  Lightbulb,
+  DollarSign,
+  Target,
+  Activity,
+  ServerCog,
+  ShieldCheck,
+  BrainCircuit,
+} from "lucide-react";
 
 export function CardsAbout() {
   const cards = [
     {
       title: "Healthcare Technology Expertise",
-      desc: "We specialize in the insurance sector, understanding the unique challenges providers face. We deliver solutions to address these challenges effectively.",
+      desc: "From appointment scheduling to patient discharge, our Hospital Information System (HIS) handles complete clinical workflows, enabling better care coordination across departments.",
       icon: <Stethoscope className="w-10 h-10 text-[#f14f3e] mb-4" />,
     },
     {
+      title: "Insurance-Ready & NPHIES Compliant",
+      desc: "With deep integration into Saudi’s NPHIES platform, we simplify eligibility checks and automate claims, minimizing denials and ensuring NHIC compliance.",
+      icon: <ShieldCheck className="w-10 h-10 text-[#f14f3e] mb-4" />,
+    },
+    {
+      title: "ERP for Financial & Resource Control",
+      desc: "Our ERP module brings your HR, inventory, and finance under one dashboard—offering real-time visibility and enabling informed financial decisions.",
+      icon: <ServerCog className="w-10 h-10 text-[#f14f3e] mb-4" />,
+    },
+    {
+      title: "Clinical Intelligence with CDSS",
+      desc: "Make smarter clinical decisions with our CDSS — offering AI-based alerts, treatment suggestions, and guideline adherence at the point of care.",
+      icon: <BrainCircuit className="w-10 h-10 text-[#f14f3e] mb-4" />,
+    },
+    {
       title: "Unique & Innovative Products",
-      desc: "Our Clinical Decision Support System reduces rejection rates, ensuring smoother claims processing and improved revenue cycles.",
+      desc: "Modules like CDSS and NPHIES integration offer a competitive edge, helping hospitals reduce claim rejections and improve operational outcomes.",
       icon: <Lightbulb className="w-10 h-10 text-[#f14f3e] mb-4" />,
     },
     {
       title: "Cost-Effective Operations",
-      desc: "We help providers cut down operational costs while enhancing efficiency and patient satisfaction.",
+      desc: "Our modular approach reduces cost by allowing you to deploy only what’s needed — with options to scale ERP or HIS features as you grow.",
       icon: <DollarSign className="w-10 h-10 text-[#f14f3e] mb-4" />,
     },
     {
-      title: "Alignment with Vision 2030",
-      desc: "Our solutions are designed to support Saudi Arabia’s national strategy for digital transformation in healthcare.",
+      title: "Vision 2030 Aligned",
+      desc: "We support the Kingdom’s digital healthcare transformation goals through scalable, interoperable, and AI-driven hospital systems.",
       icon: <Target className="w-10 h-10 text-[#f14f3e] mb-4" />,
+    },
+    {
+      title: "Scalable Architecture",
+      desc: "From clinics to multisite hospitals, our architecture lets you scale HIS, ERP, and more without disrupting current operations.",
+      icon: <Activity className="w-10 h-10 text-[#f14f3e] mb-4" />,
     },
   ];
   return (
     <React.Fragment>
       <div className="bg-white py-16 px-4 md:px-10 lg:px-20">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-black text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-black text-4xl md:text-5xl font-bold mb-10">
             About{" "}
             <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent">
               Us
             </span>
           </h1>
-          <h2 className="text-xl font-semibold text-gray-700 mb-4">
+          {/* <h2 className="text-xl font-semibold text-gray-700 mb-4">
             At Super GIT, we are transforming the healthcare landscape in Saudi
             Arabia by delivering cutting-edge technology solutions.
-          </h2>
-          <p
-            data-aos="zoom-in"
-            data-aos-delay="500"
-            className="text-center opacity-90"
-          >
-            Founded as part of Vision 2030, our mission is to digitalize
-            healthcare operations, improve efficiency, and enhance patient care,
-            particularly for those requiring acute and critical care in hospital
-            settings.{" "}
+          </h2> */}
+          <p data-aos="fade-down" class="text-gray-600 max-w-5xl mx-auto text-center space-y-3 mb-10">
+            <span>
+              SuperGit is a modern, AI-enabled healthcare platform designed for
+              the digital transformation of hospitals and clinics in Saudi
+              Arabia.
+            </span>
+            <span>
+              Each module — <strong>HIS</strong>, <strong>ERP</strong>,{" "}
+              <strong>NPHIES</strong>, and <strong>CDSS</strong> — is built to
+              be interoperable, scalable, and compliant with local regulations.
+            </span>
+            <span>
+              From patient onboarding to claims automation, it simplifies every
+              step of the clinical and operational workflow.
+            </span>
+            <span>
+              Whether you're a small clinic or a multi-site hospital, SuperGit
+              adapts to your needs — helping you deliver safer, smarter, and
+              more efficient care.
+            </span>
           </p>
         </div>
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {cards.map((card,index) => (
+        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {cards.map((card, index) => (
             <div
               key={index}
               data-aos="fade-up"
-              data-aos-delay={`${index * 200}`}
-              className="bg-white rounded-xl p-6 text-center shadow-md border border-gray-200 hover:shadow-lg transition duration-300"
+              data-aos-delay={`${index * 100}`}
+              className="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 group"
             >
-              <div className="flex justify-center">{card.icon}</div>
-              <h3 className="text-lg font-bold text-[#f14f3e] mb-2">
+              <div className="flex justify-center mb-4">
+                <div className="bg-gradient-to-tr from-[#f14f3e] to-[#fab768] p-[2px] rounded-full">
+                  <div className="bg-white p-3 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    {card.icon}
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
                 {card.title}
               </h3>
-              <p className="text-gray-600 text-sm">{card.desc}</p>
+              <p className="text-sm text-gray-600 leading-relaxed text-center">
+                {card.desc}
+              </p>
             </div>
           ))}
         </div>

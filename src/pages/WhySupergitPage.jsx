@@ -1,6 +1,8 @@
 import React from "react";
 import { HeroChoose } from "../Components/WhyChoose/HeroChoose";
 import { CardsChoose } from "../Components/WhyChoose/CardsChoose";
+import { TestominalsChoose } from "../Components/WhyChoose/TestominalsChoose";
+import { CTASection } from "../Components/WhyChoose/CTASection";
 
 export function WhySupergitPage() {
   return (
@@ -9,6 +11,8 @@ export function WhySupergitPage() {
         <div className="max-w-7xl mx-auto">
           <HeroChoose />
           <CardsChoose />
+          <TestominalsChoose />
+          <CTASection />
         </div>
       </div>
     </React.Fragment>

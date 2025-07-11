@@ -1,11 +1,14 @@
 import React from 'react'
+import { HeroDemo } from '../Components/Demo/HeroDemo'
+import { CardsDemo } from '../Components/Demo/CardsDemo'
 
 export function DemoPage() {
     
 
     return (
         <React.Fragment>
-            <div><h1>thjis is about demo page</h1></div>
+           <HeroDemo/>
+           <CardsDemo />
         </React.Fragment>
     )
 }

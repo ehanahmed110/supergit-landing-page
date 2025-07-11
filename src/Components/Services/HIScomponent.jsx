@@ -1,35 +1,58 @@
 import React from "react";
 import {
-  FaNotesMedical, 
-  FaFileInvoiceDollar, 
-  FaCogs, 
-  FaMobileAlt, 
+  FaNotesMedical,
+  FaStethoscope,
+  FaFlask,
+  FaFileInvoiceDollar,
+  FaCogs,
+  FaShieldAlt,
+  FaMobileAlt,
+  FaLock,
 } from "react-icons/fa";
 
 export function HIScomponent() {
-  const features = [
-    {
-      title: "Patient Management",
-      desc: "Inpatient and outpatient care, appointment scheduling, and medical records.",
-      icon: <FaNotesMedical className="text-3xl text-[#f14f3e]" />,
-    },
-    {
-      title: "Financial Management",
-      desc: "Billing, revenue cycle management, and financial reporting.",
-      icon: <FaFileInvoiceDollar className="text-3xl text-[#f14f3e]" />,
-    },
-    {
-      title: "Operational Efficiency",
-      desc: "Supply chain and inventory management, and human resource management.",
-      icon: <FaCogs className="text-3xl text-[#f14f3e]" />,
-    },
-    {
-      title: "Enhanced Patient Experience",
-      desc: "Mobile applications, teleconsultations, and home healthcare services.",
-      icon: <FaMobileAlt className="text-3xl text-[#f14f3e]" />,
-    },
-  ];
-
+const features = [
+  {
+    title: "Patient Management",
+    desc: "Comprehensive inpatient and outpatient tracking, appointment scheduling, and unified patient medical records.",
+    icon: <FaNotesMedical className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Clinical Documentation",
+    desc: "Doctors and nurses can capture SOAP notes, vitals, progress notes, and orders electronically.",
+    icon: <FaStethoscope className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Radiology & Lab Integration",
+    desc: "Seamless integration with LIS/RIS/PACS for faster diagnostics, reporting, and result sharing.",
+    icon: <FaFlask className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Financial Management",
+    desc: "Automated billing, revenue cycle management, co-payment tracking, and insurance reconciliation.",
+    icon: <FaFileInvoiceDollar className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Operational Efficiency",
+    desc: "Modules for inventory, HR, pharmacy, OT, housekeeping, and more—all under one roof.",
+    icon: <FaCogs className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "NPHIES & NHIC Compliance",
+    desc: "Built-in integration to meet Saudi regulatory standards for claim eligibility and e-claims.",
+    icon: <FaShieldAlt className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Enhanced Patient Experience",
+    desc: "Online portals, teleconsultation features, patient mobile apps, and e-prescriptions.",
+    icon: <FaMobileAlt className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Data Security & Audit Trails",
+    desc: "Role-based access control, full traceability, and compliance with healthcare data protection policies.",
+    icon: <FaLock className="text-3xl text-[#f14f3e]" />,
+  },
+];
   return (
     <React.Fragment>
       <div className="w-full">

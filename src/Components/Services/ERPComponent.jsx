@@ -4,30 +4,54 @@ import {
   FaUserTie,
   FaTruckMoving,
   FaBoxOpen,
+  FaTasks,
+  FaChartPie,
+  FaFolderOpen,
+  FaChartLine,
 } from "react-icons/fa";
 export function ERPComponent() {
-  const features = [
-    {
-      title: "Financial Management",
-      desc: "Robust financial accounting, budgeting, and reporting capabilities.",
-      icon: <FaFileInvoiceDollar className="text-3xl text-[#f14f3e]" />,
-    },
-    {
-      title: "Human Resource Management",
-      desc: "Employee onboarding, payroll, and performance management.",
-      icon: <FaUserTie className="text-3xl text-[#f14f3e]" />,
-    },
-    {
-      title: "Supply Chain Management",
-      desc: "Efficient procurement, inventory control, and logistics management.",
-      icon: <FaTruckMoving className="text-3xl text-[#f14f3e]" />,
-    },
-    {
-      title: "Asset Management",
-      desc: "Track and manage your organization's valuable assets effectively.",
-      icon: <FaBoxOpen className="text-3xl text-[#f14f3e]" />,
-    },
-  ];
+const features = [
+  {
+    title: "Financial Management",
+    desc: "Robust financial accounting, budgeting, and real-time financial reporting tailored for healthcare operations.",
+    icon: <FaFileInvoiceDollar className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Human Resource Management",
+    desc: "Automate onboarding, attendance, payroll, leaves, and appraisals with full visibility into your workforce.",
+    icon: <FaUserTie className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Supply Chain Management",
+    desc: "Streamline procurement, vendor management, and real-time inventory control across departments.",
+    icon: <FaTruckMoving className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Asset Management",
+    desc: "Monitor medical equipment, IT hardware, and facility assets with lifecycle tracking and maintenance alerts.",
+    icon: <FaBoxOpen className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Project & Task Tracking",
+    desc: "Plan, assign, and track internal projects with deadline alerts and department-specific task management.",
+    icon: <FaTasks className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Cost Center Analysis",
+    desc: "Get detailed financial insights per department or unit to optimize cost allocation and reduce overhead.",
+    icon: <FaChartPie className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Integrated Document Management",
+    desc: "Store contracts, invoices, and policies securely with access control and audit trails.",
+    icon: <FaFolderOpen className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Analytics & Dashboards",
+    desc: "Customizable dashboards and KPIs for financials, HR, procurement, and operations — all in one view.",
+    icon: <FaChartLine className="text-3xl text-[#f14f3e]" />,
+  },
+];
   return (
     <React.Fragment>
       <div className="w-full">

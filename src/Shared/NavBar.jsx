@@ -2,9 +2,10 @@ import { Menubar } from "primereact/menubar";
 import React, { useEffect, useState } from "react";
 import { ShareButton } from "./ShareButton";
 import { Menu, X } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export function NavBar() {
+  const navigate = useNavigate()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const links = [
@@ -20,9 +21,9 @@ export function NavBar() {
   return (
     <div className="bg-black fixed w-full z-50 shadow-md">
       <div className="flex justify-between items-center px-6 py-2">
-        <div className="flex items-center space-x-4">
-          <img
-            className="w-10"
+        <div  className="flex items-center space-x-4">
+          <img onClick={()=>navigate('/')}
+            className="w-10 cursor-pointer"
             src="https://acc2.fe.supergitsa.com/images/supergit-02.png"
             alt="logo"
           />
@@ -90,7 +91,7 @@ export function NavBar() {
             <ShareButton
               label="Get Started"
               variant="transparent"
-              className="!w-full !py-2 !font-semibold !rounded-lg !text-white !bg-gradient-to-r from-[#f14f3e] to-[#fab768] !shadow-md transition-transform duration-300 !border !border-black hover:!text-white hover:!border-white hover:!bg-none hover:!shadow-none"
+              className="!w-full !py-2 !font-semibold !rounded-full !text-white !bg-gradient-to-r from-[#f14f3e] to-[#fab768] !shadow-md transition-transform duration-300 !border !border-black hover:!text-white hover:!border-white hover:!bg-none hover:!shadow-none"
             />
           </div>
         </div>

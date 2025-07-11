@@ -1,29 +1,47 @@
 import React from "react";
-import { FaIdCard, FaFileAlt, FaClock, FaRobot } from "react-icons/fa";
+import {
+  FaIdCard,
+  FaFileAlt,
+  FaClock,
+  FaRobot,
+  FaShieldAlt,
+  FaClipboardList,
+} from "react-icons/fa";
 
 export function NPHIESComponent() {
   const features = [
     {
       title: "Fast Eligibility Checks",
-      desc: "Quickly verify patient eligibility for insurance coverage.",
+      desc: "Instantly verify insurance eligibility via secure NPHIES APIs, reducing delays at point-of-care.",
       icon: <FaIdCard className="text-3xl text-[#f14f3e]" />,
     },
     {
       title: "Accurate Claims Submission",
-      desc: "Submit accurate claims electronically to minimize errors and denials.",
+      desc: "Minimize claim denials with structured, standards-compliant electronic claim submissions.",
       icon: <FaFileAlt className="text-3xl text-[#f14f3e]" />,
     },
     {
       title: "Real-time Status Updates",
-      desc: "Track the status of your claims in real-time for enhanced efficiency.",
+      desc: "Track eligibility, approvals, and claim statuses in real time—fully integrated with NHIC systems.",
       icon: <FaClock className="text-3xl text-[#f14f3e]" />,
     },
     {
       title: "Automated Claims Submission",
-      desc: "Streamline claims submission with automated workflows.",
+      desc: "Trigger claim workflows directly from clinical and billing events—no manual re-entry required.",
       icon: <FaRobot className="text-3xl text-[#f14f3e]" />,
     },
+    {
+      title: "Compliant with NHIC & NPHIES",
+      desc: "Stay aligned with Saudi Arabia’s national health standards and mandatory integrations.",
+      icon: <FaShieldAlt className="text-3xl text-[#f14f3e]" />,
+    },
+    {
+      title: "Audit & Traceability",
+      desc: "Full audit logs and traceability for every transaction submitted through NPHIES.",
+      icon: <FaClipboardList className="text-3xl text-[#f14f3e]" />,
+    },
   ];
+
   return (
     <React.Fragment>
       <div className="w-full">
@@ -31,9 +49,10 @@ export function NPHIESComponent() {
         <div
           className="relative h-[300px] md:h-[400px] w-full bg-[length:100%_100%] bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://supergitsa.com/images/connect.webp')",
+            backgroundImage:
+              "url('https://supergitsa.com/images/connect.webp')",
           }}
-           data-aos="zooom-in"
+          data-aos="zooom-in"
         >
           <div className="absolute inset-0 bg-black/60"></div>
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
@@ -44,7 +63,7 @@ export function NPHIESComponent() {
               </span>
             </h2>
             <p className="text-base md:text-lg max-w-2xl">
-              ERP simplifies your accounting, payroll, invoicing, reporting, and
+              NPHIES simplifies your accounting, payroll, invoicing, reporting, and
               more — all in one intuitive platform built for modern businesses.
             </p>
           </div>

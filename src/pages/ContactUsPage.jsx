@@ -41,11 +41,12 @@ export function ContactUsPage() {
                 <p>We Are Open 24/7</p>
               </div>
               <div className="pt-4 rounded overflow-hidden shadow-md">
+
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=..."
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.2497620217523!2d39.15979410965655!3d21.615189080102336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3da445134939d%3A0x1313cfaad43fc8a7!2sHira%20St%2C%20Jeddah%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1752209751702!5m2!1sen!2sus"
                   width="100%"
-                  height="260"
-                  style={{ border: 0 }}
+                  height="330"
+                  style={{border:0}}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

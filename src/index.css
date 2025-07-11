@@ -3,10 +3,26 @@ html {
   scroll-behavior: smooth;
 }
 @keyframes gradient-x {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .animate-gradient-x {
   animation: gradient-x 8s ease infinite;
+}
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  background: linear-gradient(to right, #f14f3e, #fab768);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+.custom-placeholder::placeholder {
+  color: white !important; /* Tailwind's red-500 */
+  opacity: 1; /* Make sure it's fully visible */
 }

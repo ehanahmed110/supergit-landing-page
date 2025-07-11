@@ -1,33 +1,57 @@
 import React from "react";
 import {
-  FaShieldAlt,
+ FaShieldAlt,
   FaFileMedical,
   FaStethoscope,
   FaUserMd,
+  FaExclamationTriangle,
+  FaBookMedical,
+  FaRobot,
+  FaMicroscope,
 } from "react-icons/fa";
 export function CDSSComponent() {
   const features = [
-    {
-      title: "Reduced Rejection Rates",
-      desc: "Minimize claim denials and improve reimbursement rates.",
-      icon: <FaShieldAlt className="text-3xl text-[#f14f3e]" />,
-    },
-    {
-      title: "High-Quality Claims",
-      desc: "Ensure accurate and complete claims through automated recommendations.",
-      icon: <FaFileMedical className="text-3xl text-[#f14f3e]" />,
-    },
-    {
-      title: "Improved Patient Care",
-      desc: "Gain valuable insights and support evidence-based decision-making.",
-      icon: <FaStethoscope className="text-3xl text-[#f14f3e]" />,
-    },
-    {
-      title: "Increased Physician Satisfaction",
-      desc: "Streamline workflows, reduce administrative burden, and improve physician efficiency.",
-      icon: <FaUserMd className="text-3xl text-[#f14f3e]" />,
-    },
-  ];
+  {
+    title: "Reduced Rejection Rates",
+    desc: "Minimize claim denials and improve reimbursement rates.",
+    icon: <FaShieldAlt className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "High-Quality Claims",
+    desc: "Ensure accurate and complete claims through automated recommendations.",
+    icon: <FaFileMedical className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Improved Patient Care",
+    desc: "Gain valuable insights and support evidence-based decision-making.",
+    icon: <FaStethoscope className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Increased Physician Satisfaction",
+    desc: "Streamline workflows, reduce administrative burden, and improve physician efficiency.",
+    icon: <FaUserMd className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Real-Time Clinical Alerts",
+    desc: "Automatic alerts for drug interactions, contraindications, allergies, and more — at the point of care.",
+    icon: <FaExclamationTriangle className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Guideline-Based Recommendations",
+    desc: "Standardize care with built-in clinical pathways and treatment suggestions aligned with international protocols.",
+    icon: <FaBookMedical className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "AI-Powered Decision Support",
+    desc: "Leverage machine learning models for diagnosis suggestions and predictive insights.",
+    icon: <FaRobot className="text-3xl text-[#f14f3e]" />,
+  },
+  {
+    title: "Integrated Lab & Radiology Insights",
+    desc: "Get smart interpretations from lab results and radiology reports integrated directly into clinical notes.",
+    icon: <FaMicroscope className="text-3xl text-[#f14f3e]" />,
+  },
+];
   return (
     <React.Fragment>
       <div className="w-full">
