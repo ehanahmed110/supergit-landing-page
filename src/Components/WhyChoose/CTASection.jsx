@@ -1,7 +1,7 @@
 import React from 'react'
-
+import { useNavigate } from "react-router-dom"
 export function CTASection() {
-    
+   const navigate = useNavigate();    
 
     return (
         <React.Fragment>
@@ -12,7 +12,7 @@ export function CTASection() {
         <p className="mb-4">
           Join 20+ healthcare providers using SuperGit today.
         </p>
-        <button className="bg-white text-[#f14f3e] font-bold py-2 px-6 rounded-full hover:opacity-90 transition cursor-pointer  ">
+        <button onClick={()=>navigate('/demo')} className="bg-white text-[#f14f3e] font-bold py-2 px-6 rounded-full hover:opacity-90 transition cursor-pointer  ">
           Request a Demo
         </button>
       </div>

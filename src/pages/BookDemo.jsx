@@ -39,29 +39,33 @@ export function BookDemo() {
     company: Yup.string().required("Company name is required"),
   });
   const handleSubmit = async (values, { resetForm }) => {
-    try {
-      const response = await axios.post(
-        "https://formsubmit.co/75ca9f5cfd53755a4aa3c4a19ae30f97",
-        values
-      );
+      try {
+        const response = await axios.post(
+          "http://localhost:5000/send-email",
+          values
+        );
 
-      if (response.status === 200) {
-        alert("Demo Booked Successfully!");
-        resetForm();
-      } else {
-        alert("Booking failed!");
+        if (response.status === 200) {
+          alert("Demo Booked Successfully via SMTP!");
+          resetForm();
+        } else {
+          alert("SMTP booking failed. Try again.");
+        }
+      } catch (error) {
+        console.error("SMTP Error:", error);
+        alert("Something went wrong with the SMTP server.");
       }
-    } catch (error) {
-      console.error("Booking error:", error);
-      alert("Something went wrong.");
-    }
-  };
+    };
+
   return (
     <React.Fragment>
       <section className="min-h-screen bg-gray-50 py-12 px-4 sm:px-8 lg:px-20 flex items-center justify-center">
         <div className="max-w-4xl w-full bg-white p-6 sm:p-10 rounded-xl shadow-xl">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">
-            Book a <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">Free Demo</span>
+            Book a{" "}
+            <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">
+              Free Demo
+            </span>
           </h2>
           <p className="text-center text-gray-600 mb-8">
             Let us show you how Supergit can transform your workflow.

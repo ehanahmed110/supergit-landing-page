@@ -60,26 +60,31 @@ export function ContactSection() {
             </ul>
           </div>
 
-          <div>
+          <div className="order-4 lg:order-3">
             <h3 className="text-xl font-semibold mb-8 text-white">
               Contact Us:
             </h3>
-            <p className="mb-5 text-sm flex space-x-2">
+            <p className="mb-5 text-sm flex space-x-1">
               {" "}
               <i className="pi pi-envelope"></i>
-              <span> Email: supergit@gmail.com</span>
+              <span>info@supergit.com</span>
             </p>
-            <p className="mb-5 text-sm flex space-x-2">
-              <i className="pi pi-phone"></i>{" "}
-              <span>Phone: +92-348-0095267 </span>{" "}
+            <p className="mb-5 text-sm flex space-x-1">
+              <i className="pi pi-phone"></i> <span>+92-348-0095267 </span>{" "}
             </p>
-            <p className="mb-4 text-sm flex space-x-2">
+            <p className="mb-4 text-sm flex space-x-1">
               {" "}
               <i className="pi pi-map-marker"></i>
-              <span> Address: Gujranwala, Pakistan </span>
+              <span>Hira Street, Jeddah,Saudi Arabia. </span>
             </p>
+            {/* <p className="flex gap-x-2 md:gap-x-8 ">
+              <i className="pi pi-facebook cursor-pointer"></i>{" "}
+              <i className="pi pi-instagram cursor-pointer"></i>{" "}
+              <i className="pi pi-twitter cursor-pointer"></i>{" "}
+              <i className="pi pi-youtube cursor-pointer"></i>
+            </p> */}
           </div>
-          <div>
+          <div className="order-3 md:order-4">
             <h3 className="text-xl font-semibold mb-8 text-white">Feedback</h3>
             <form>
               <textarea

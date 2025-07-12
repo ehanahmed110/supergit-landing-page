@@ -4,15 +4,15 @@ import { Forms } from "../Components/Contact/Form";
 export function ContactUsPage() {
   return (
     <React.Fragment>
-      <div className="min-h-screen bg-gray-50 py-12 px-4 md:px-12">
+      <div className="min-h-screen bg-gray-50 py-12 px-4 md:px-12 mb-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-gray-800">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 text-gray-800">
             Contact{" "}
             <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">
               Us
             </span>
           </h2>
-          <p className="text-center text-gray-600 max-w-xl mx-auto mb-10">
+          <p className="text-center text-gray-600 max-w-xl mx-auto mb-14">
             Have a question or need help? We’re here to assist you.Far far away,
             behind the word mountains, far from the countries Vokalia and
             Consonantia, there live the blind texts.
@@ -41,12 +41,11 @@ export function ContactUsPage() {
                 <p>We Are Open 24/7</p>
               </div>
               <div className="pt-4 rounded overflow-hidden shadow-md">
-
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.2497620217523!2d39.15979410965655!3d21.615189080102336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3da445134939d%3A0x1313cfaad43fc8a7!2sHira%20St%2C%20Jeddah%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1752209751702!5m2!1sen!2sus"
                   width="100%"
                   height="330"
-                  style={{border:0}}
+                  style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

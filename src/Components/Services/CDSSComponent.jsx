@@ -79,9 +79,9 @@ export function CDSSComponent() {
         </div>
 
         {/* ------------------ Heading + Features Section------------------ */}
-        <div className="px-4 md:px-10 py-12">
+        <div className="px-4 md:px-10">
           <div
-            className="text-center max-w-3xl mx-auto mb-10"
+            className="text-center max-w-3xl mx-auto mb-4 py-14 pb-8"
             data-aos="fade-down"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-3 text-gray-900">

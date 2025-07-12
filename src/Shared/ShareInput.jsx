@@ -24,7 +24,7 @@ export function ShareInput({ icon, label, className, placeholder, ...props }) {
           pt={{
             root: {
               className:
-                "!px-2 !py-1 !w-full !rounded-[4px] !outline-none !ring-none focus:!ring-none !shadow-none focus:!outline-none focus:!shadow-none hover:!border-[#fab768]",
+                "!px-2 !py-1 !w-full !rounded-[4px] !ring-0 !focus:ring-0 !outline-none !ring-none focus:!ring-none !shadow-none focus:!outline-none focus:!shadow-none hover:!border-[#fab768]",
             },
           }}
         />

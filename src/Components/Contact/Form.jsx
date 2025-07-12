@@ -3,7 +3,7 @@ import * as Yup from "yup";
 import React from "react";
 import { ShareInput } from "../../Shared/ShareInput";
 import { CustomDropDown } from "../../Shared/CustomDropDown";
-import axios from 'axios';
+import emailjs from "@emailjs/browser";
 
 export function Forms() {
   const Services = [
@@ -12,6 +12,7 @@ export function Forms() {
     { label: "NPHIES", value: "nphies" },
     { label: "CDSS", value: "cdss" },
   ];
+
   const initialValues = {
     name: "",
     l_name: "",
@@ -37,31 +38,41 @@ export function Forms() {
     date: Yup.string().required("Please select a date"),
     time: Yup.string().required("Please select time"),
     message: Yup.string().required("Please enter a message"),
-    company: Yup.string().required("comapany name required"),
+    company: Yup.string().required("Company name is required"),
   });
+
   const handleSubmit = async (values, { resetForm }) => {
+    const templateParams = {
+      name: values.name,
+      last_name: values.l_name,
+      email: values.email,
+      phone: values.phone,
+      services: values.services,
+      date: values.date,
+      time: values.time,
+      message: values.message,
+      company: values.company,
+    };
+
     try {
-      const response = await axios.post(
-        "https://formsubmit.co/75ca9f5cfd53755a4aa3c4a19ae30f97"
+      const result = await emailjs.send(
+        "service_qjsofyl", // 🔁 replace with your actual Service ID
+        "template_rxdkfp5", // 🔁 replace with your actual Template ID
+        templateParams,
+        "woVPuPNNjJKH39O83" // 🔁 replace with your actual Public Key
       );
-      if (response.ok) {
-        console.log(values);
-        alert("Form submitted successfully!");
-        resetForm();
-      } else {
-        alert("Submission failed!");
-      }
+
+      console.log("Email successfully sent!", result.text);
+      alert("Appointment submitted successfully!");
+      resetForm();
     } catch (error) {
-      console.error("Submission error:", error);
-      alert("Error submitting form.");
+      console.error("EmailJS Error:", error);
+      alert("Failed to send email. Please try again later.");
     }
-    console.log("Form Values:", values);
-    resetForm();
   };
 
   return (
     <React.Fragment>
-      {/* <div className="py-10 px-4 md:px-12 bg-gray-100"> */}
       <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md">
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent">
           Free Consultation
@@ -72,7 +83,7 @@ export function Forms() {
           validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
-          <Form className="space-y-4" >
+          <Form className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               <ShareInput
                 label="First Name"
@@ -85,7 +96,6 @@ export function Forms() {
                 name="l_name"
                 placeholder="Enter Last Name"
               />
-
               <Field
                 name="services"
                 label="Select Our Services"
@@ -94,7 +104,6 @@ export function Forms() {
                 placeholder="Select Our Services"
                 optionLabel="label"
               />
-
               <ShareInput
                 label="Phone"
                 name="phone"
@@ -141,8 +150,6 @@ export function Forms() {
           </Form>
         </Formik>
       </div>
-
-      {/* </div> */}
     </React.Fragment>
   );
 }

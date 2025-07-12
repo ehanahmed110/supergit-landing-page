@@ -6,7 +6,7 @@ const modules = [
     title: "HIS – Hospital Information System",
     description:
       "Our HIS module streamlines patient records, appointments, billing, and administration across departments.",
-    image: "https://supergitsa.com/images/his.webp", // Replace with your actual image path
+    image: "https://supergitsa.com/images/his.webp", 
     benefits: [
       "Centralized patient data",
       "Improved department communication",
@@ -53,10 +53,10 @@ export function HowWorksPage() {
     <React.Fragment>
       <div className="bg-white py-16 px-4 md:px-12">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-gray-800">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 text-gray-800">
             How <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">SuperGit</span> Works
           </h2>
-          <p className="text-center text-gray-600 mb-10 max-w-xl mx-auto">
+          <p className="text-center text-gray-600 mb-18 max-w-3xl mx-auto">
             Discover how SuperGit’s healthcare modules bring intelligence,
             automation, and ease across every department in your hospital.
           </p>

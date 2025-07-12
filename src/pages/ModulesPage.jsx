@@ -15,7 +15,7 @@ export function ModulesPage() {
   return (
    <React.Fragment>
       {/* Section Header */}
-      <section className="w-full min-h-[50vh]  flex items-center justify-center px-6 text-center">
+      <section className="w-full min-h-[40vh]  flex items-center justify-center px-6 text-center">
         <div className="max-w-4xl">
           <h3
             className="text-sm md:text-md uppercase tracking-wide font-medium mb-2"
@@ -24,7 +24,7 @@ export function ModulesPage() {
             Services
           </h3>
           <h1
-            className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4"
+            className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4"
             data-aos="fade-down"
             data-aos-delay="100"
           >

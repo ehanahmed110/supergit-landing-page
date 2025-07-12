@@ -20,7 +20,7 @@ export function ShareButton({type,label, icon,onClick, variant = 'default',disab
           root: {
             className:
               "!text-[13px] hover:!bg-transparent hover:!text-[#fab768] !outline-none !shadow-none focus:!outline-none focus:!shadow-none hover:!border-[#fab768]",
-          },
+          },  
         }}
         {...props}
         type={type}
