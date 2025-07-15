@@ -34,11 +34,11 @@ export function LandingPage() {
           <HeroSection />
         </section>
       </div>
-      <div>
+      {/* <div>
         <section id="about">
           <AboutSection />
         </section>
-      </div>
+      </div> */}
       <div>
         <section id="modules">
           <ModulesSection />

@@ -4,6 +4,7 @@ import React from "react";
 import { ShareInput } from "../../Shared/ShareInput";
 import { CustomDropDown } from "../../Shared/CustomDropDown";
 import emailjs from "@emailjs/browser";
+import axios from "axios";
 
 export function Forms() {
   const Services = [
@@ -14,6 +15,7 @@ export function Forms() {
   ];
 
   const initialValues = {
+    type: "app",
     name: "",
     l_name: "",
     services: "",
@@ -42,33 +44,37 @@ export function Forms() {
   });
 
   const handleSubmit = async (values, { resetForm }) => {
-    const templateParams = {
-      name: values.name,
-      last_name: values.l_name,
-      email: values.email,
-      phone: values.phone,
-      services: values.services,
-      date: values.date,
-      time: values.time,
-      message: values.message,
-      company: values.company,
-    };
-
     try {
-      const result = await emailjs.send(
-        "service_qjsofyl", // 🔁 replace with your actual Service ID
-        "template_rxdkfp5", // 🔁 replace with your actual Template ID
-        templateParams,
-        "woVPuPNNjJKH39O83" // 🔁 replace with your actual Public Key
+      const response = await axios.post(
+        "http://localhost:5000/send-email",
+        values
       );
-
-      console.log("Email successfully sent!", result.text);
-      alert("Appointment submitted successfully!");
-      resetForm();
+      if (response.status === 200) {
+        alert("Demo Booked Successfully via SMTP!");
+        resetForm();
+      } else {
+        alert("SMTP booking failed. Try again.");
+      }
     } catch (error) {
-      console.error("EmailJS Error:", error);
-      alert("Failed to send email. Please try again later.");
+      console.error("SMTP Error:", error);
+      alert("Something went wrong with the SMTP server.");
     }
+
+    // try {
+    //   const result = await emailjs.send(
+    //     "service_qjsofyl", // 🔁 replace with your actual Service ID
+    //     "template_rxdkfp5", // 🔁 replace with your actual Template ID
+    //     templateParams,
+    //     "woVPuPNNjJKH39O83" // 🔁 replace with your actual Public Key
+    //   );
+
+    //   console.log("Email successfully sent!", result.text);
+    //   alert("Appointment submitted successfully!");
+    //   resetForm();
+    // } catch (error) {
+    //   console.error("EmailJS Error:", error);
+    //   alert("Failed to send email. Please try again later.");
+    // }
   };
 
   return (
@@ -132,7 +138,7 @@ export function Forms() {
                 name="message"
                 rows={5}
                 placeholder="Your Message"
-                className="w-full border border-gray-300 p-3 rounded-md"
+                className="w-full border border-gray-300 p-3 rounded-md focus:border-[#fab768] outline-none"
               />
               <ErrorMessage
                 name="message"

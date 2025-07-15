@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 export function NavBar() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const links = [
@@ -21,13 +21,18 @@ export function NavBar() {
   return (
     <div className="bg-black fixed w-full z-50 shadow-md">
       <div className="flex justify-between items-center px-6 py-2">
-        <div  className="flex items-center space-x-4">
-          <img onClick={()=>navigate('/')}
+        <div className="flex items-center space-x-4">
+          <img
+            onClick={() => navigate("/")}
             className="w-10 cursor-pointer"
             src="https://acc2.fe.supergitsa.com/images/supergit-02.png"
             alt="logo"
           />
-
+          <div onClick={()=>navigate('/')} className="flex md:hidden">
+            <h2 className="text-3xl -ml-[10px] font-bold bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">
+              SuperGit
+            </h2>
+          </div>
           {/* Desktop Nav ---------------------*/}
           <nav className="hidden md:flex space-x-0.5">
             {links.map((link) => (

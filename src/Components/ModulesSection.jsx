@@ -49,10 +49,13 @@ export function ModulesSection() {
   ];
   return (
     <React.Fragment>
-      <div className="px-6 md:px-6 py-10 bg-gray-50">
-        <h2 className="text-4xl font-bold mb-14 text-gray-800 text-center">
-          Core Modules
-        </h2>
+      <div className="px-6  py-20 bg-gray-50">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+            Core{" "}
+            <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">
+              Modules
+            </span>
+          </h2>
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 text-white">
           {modules.map((module, index) => (
             <li

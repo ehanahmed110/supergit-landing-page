@@ -63,8 +63,7 @@ export function NPHIESComponent() {
               </span>
             </h2>
             <p className="text-base md:text-lg max-w-2xl">
-              NPHIES simplifies your accounting, payroll, invoicing, reporting, and
-              more — all in one intuitive platform built for modern businesses.
+              NPHIES empowers seamless integration between healthcare providers and insurance companies.
             </p>
           </div>
         </div>

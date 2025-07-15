@@ -12,6 +12,7 @@ export function BookDemo() {
     { label: "CDSS", value: "cdss" },
   ];
   const initialValues = {
+    type: "Demo",
     name: "",
     l_name: "",
     services: "",
@@ -28,41 +29,44 @@ export function BookDemo() {
     email: Yup.string().email().required("Email is required"),
     l_name: Yup.string().required("Last name is required"),
     services: Yup.string().required("Please select a service"),
-    phone: Yup.string()
-      .required("Phone number is required")
-      .matches(/^[0-9]+$/, "Only digits allowed")
-      .min(9, "Min 9 digits")
-      .max(15, "Max 15 digits"),
+phone: Yup.string()
+  .required("Phone number is required")
+  .matches(
+    /^\+?[1-9]\d{1,14}$/,
+    "Enter a valid international phone number"
+  ),
     date: Yup.string().required("Please select a date"),
     time: Yup.string().required("Please select time"),
     message: Yup.string().required("Please enter a message"),
     company: Yup.string().required("Company name is required"),
   });
   const handleSubmit = async (values, { resetForm }) => {
-      try {
-        const response = await axios.post(
-          "http://localhost:5000/send-email",
-          values
-        );
+    console.log(values);
 
-        if (response.status === 200) {
-          alert("Demo Booked Successfully via SMTP!");
-          resetForm();
-        } else {
-          alert("SMTP booking failed. Try again.");
-        }
-      } catch (error) {
-        console.error("SMTP Error:", error);
-        alert("Something went wrong with the SMTP server.");
+    try {
+      const response = await axios.post(
+        "http://localhost:5000/send-email",
+        values
+      );
+
+      if (response.status === 200) {
+        alert("Demo Booked Successfully via SMTP!");
+        resetForm();
+      } else {
+        alert("SMTP booking failed. Try again.");
       }
-    };
+    } catch (error) {
+      console.error("SMTP Error:", error);
+      alert("Something went wrong with the SMTP server.");
+    }
+  };
 
   return (
     <React.Fragment>
       <section className="min-h-screen bg-gray-50 py-12 px-4 sm:px-8 lg:px-20 flex items-center justify-center">
         <div className="max-w-4xl w-full bg-white p-6 sm:p-10 rounded-xl shadow-xl">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">
-            Book a{" "}
+            Request a{" "}
             <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">
               Free Demo
             </span>
@@ -99,7 +103,7 @@ export function BookDemo() {
                 <ShareInput
                   label="Phone"
                   name="phone"
-                  placeholder="Enter Phone Number"
+                  placeholder="e.g. +923001234567"
                 />
                 <ShareInput label="Date" name="date" type="date" />
                 <ShareInput label="Time" name="time" type="time" />
@@ -125,7 +129,7 @@ export function BookDemo() {
                   name="message"
                   rows={4}
                   placeholder="Type your message..."
-                  className="w-full border border-gray-300 p-3 rounded-md"
+                  className="w-full border border-gray-300 p-3 rounded-md focus:border-[#fab768] outline-none"
                 />
                 <ErrorMessage
                   name="message"
@@ -138,7 +142,7 @@ export function BookDemo() {
                 type="submit"
                 className="w-full bg-gradient-to-r from-[#f14f3e] to-[#fab768] text-white py-3 rounded-md font-semibold hover:opacity-90 transition cursor-pointer"
               >
-                Book Demo
+                Request Demo
               </button>
             </Form>
           </Formik>

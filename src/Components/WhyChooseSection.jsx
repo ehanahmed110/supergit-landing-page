@@ -53,7 +53,7 @@ export function WhyChooseSection() {
         <h2
           data-aos="fade-down"
           data-aos-delay="100"
-          className="text-4xl font-bold text-center mb-6 text-gray-900"
+          className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900"
         >
           Why Choose <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">
             Supergit
@@ -65,8 +65,8 @@ export function WhyChooseSection() {
           data-aos-delay="500"
           className="text-center text-lg mb-12 text-gray-600"
         >
-          We simplify your financial operations and empower your business with
-          intuitive, reliable tools.
+          We simplify your financial operations,grow Up and empower your business with
+          intuitive, and reliable tools.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {features.map((feature, index) => (

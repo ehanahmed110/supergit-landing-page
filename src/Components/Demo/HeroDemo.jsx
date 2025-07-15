@@ -15,11 +15,11 @@ export function HeroDemo() {
       <span className="font-semibold"> HIS, ERP, CDSS, and NPHIES integration</span>.
     </p>
     <div className="flex flex-wrap gap-4 mt-4 justify-center">
-      <button onClick={()=>navigate('/demovideo')} className="bg-white text-[#f14f3e] font-semibold px-6 py-2 rounded-full shadow hover:bg-yellow-100 transition">
+      <button onClick={()=>navigate('/demovideo')} className="bg-white text-[#f14f3e] font-semibold px-6 py-2 rounded-full shadow hover:bg-yellow-100 transition cursor-pointer">
         Try Live Demo
       </button>
-      <button onClick={()=>navigate('/bookdemo')}  className="bg-[#00000022] border border-white px-6 py-2 rounded-full hover:bg-white hover:text-[#f14f3e] transition">
-        Book a Demo
+      <button onClick={()=>navigate('/bookdemo')}  className="bg-[#00000022] border border-white px-6 py-2 rounded-full hover:bg-white hover:text-[#f14f3e] transition cursor-pointer">
+        Request a Demo
       </button>
     </div>
   </div>

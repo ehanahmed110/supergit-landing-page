@@ -30,24 +30,24 @@ export function HeroSection() {
             <h1
               data-aos="fade-down"
               data-aos-delay="100"
-              className="text-3xl md:text-5xl lg:text-7xl font-extrabold md:text-gray-950 mb-4 drop-shadow-[0_10px_4px_rgba(0,0,0,0.35)]"
+              className="text-3xl md:text-5xl lg:text-7xl font-extrabold text-white mb-4 drop-shadow-[0_10px_4px_rgba(0,0,0,0.35)]"
             >
               Welcome to{" "}
               <span className="text-transparent bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text italic">
-                Supergit
+                SuperGit
               </span>
             </h1>
             <h2
               data-aos="fade-up"
               data-aos-delay="300"
-              className="text-lg md:text-2xl lg:text-4xl font-semibold md:text-gray-950 text-black mb-4 capitalize"
+              className="text-lg md:text-2xl lg:text-4xl font-semibold text-white mb-4 capitalize"
             >
               Connecting you with innovative solutions
             </h2>
             <p
               data-aos="zoom-in"
               data-aos-delay="500"
-              className="text-sm md:text-lg md:text-black max-w-2xl mb-6 text-white"
+              className="text-sm md:text-lg text-white max-w-2xl mb-6 "
             >
               Discover our cutting-edge products and services that enhance your
               daily life.

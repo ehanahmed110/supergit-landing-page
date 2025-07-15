@@ -43,7 +43,7 @@ export function HowWorksSection() {
     <React.Fragment>
       <div className="min-h-screen px-10 py-20 bg-white">
         <h2
-          className="text-4xl font-bold text-center mb-6 text-gray-900"
+          className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900"
           data-aos="fade-down"
         >
           How{" "}
@@ -53,11 +53,11 @@ export function HowWorksSection() {
           Works
         </h2>
         <p
-          className="text-center text-lg text-gray-600 mb-12 max-w-2xl mx-auto"
+          className="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto"
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Start managing your business finances in just a few simple steps.
+          Start managing your business finances,invoices,healthcare system and insurance in just a few simple steps.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">

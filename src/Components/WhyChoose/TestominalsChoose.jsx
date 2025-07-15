@@ -2,7 +2,7 @@ import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import ctoimg from "/src/assets/WhatsApp Image 2025-07-11 at 09.41.46_d2aee101.jpg";
 import uzairimg from "/src/assets/WhatsApp Image 2025-07-11 at 09.41.45_23d82ac7.jpg";
-import rehmanimg from "/src/assets/WhatsApp Image 2025-07-11 at 09.41.46_4c21ecda.jpg"
+import rehmanimg from "/src/assets/WhatsApp Image 2025-07-11 at 09.41.46_4c21ecda.jpg";
 
 export function TestominalsChoose() {
   const testimonials = [
@@ -45,11 +45,10 @@ export function TestominalsChoose() {
   ];
 
   const partners = [
-    
-      ctoimg,
-      uzairimg,
-      rehmanimg,
-      ctoimg
+    "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/qimh3jbmtwv1gs5toxgb",
+    "https://thearabianmirror.com/wp-content/uploads/2025/04/Australia-21.jpg",
+    "https://seeklogo.com/images/S/saudi-banks-logo-5E702674C0-seeklogo.com.png",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLS5Ifh4KSCb2lh634Kl4QKhjs9Yq-YB-k0g&s"
   ];
 
   return (
@@ -80,8 +79,8 @@ export function TestominalsChoose() {
         </div>
       </div>
 
-      <div className="mb-20 text-center">
-        <h3 className="text-xl font-bold text-gray-700 mb-6">
+      <div className="mb-14 text-center">
+        <h3 className="text-2xl font-bold text-gray-700 ">
           Trusted by Leading SuperGit Providers
         </h3>
         <div className="flex items-center justify-center flex-wrap gap-6">
@@ -90,7 +89,7 @@ export function TestominalsChoose() {
               key={i}
               src={logo}
               alt={`partner-${i}`}
-              className="h-18 w-auto grayscale hover:grayscale-0 transition cursor-pointer"
+              className="h-22 w-30  transition cursor-pointer"
               data-aos="fade-up"
               data-aos-delay={i * 100}
             />

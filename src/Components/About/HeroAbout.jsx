@@ -3,20 +3,20 @@ import React from "react";
 export function HeroAbout() {
   const Items = [
     {
-      title: "Healthcare Technology Expertise",
-      desc: "Keep your financial records in check with automated tools and smart categorization.",
+      title: "EnterPrise Resourse Plaining (ERP)",
+      desc: "ERP simplifies your accounting, payroll, invoicing, reporting, and more — all in one intuitive businesses.",
     },
     {
-      title: "Unique and Innovative Products",
-      desc: "Manage employee payments, taxes, and benefits with a few simple clicks.",
+      title: "Hospital Information System (HIS)",
+      desc: "HIS to manage every aspect of your healthcare facility, enabling efficient and streamlined operations.",
     },
     {
-      title: "Cost-Effective Operations",
-      desc: "Create, send, and track invoices from a single intuitive dashboard.",
+      title: "NPHIES Connect Integration",
+      desc: "Seamlessly integrate with NPHIES for efficient insurance claims processing and ensure compliance with us.",
     },
     {
-      title: "Alignment with Vision 2030",
-      desc: "Get clear insights and reports to guide your business decisions with confidence.",
+      title: "Clinical Decesion Support System (CDSS)",
+      desc: "Enhance patient care and improve outcomes with our AI-powered decision support system.",
     },
   ];
   return (
