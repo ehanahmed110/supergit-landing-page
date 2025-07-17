@@ -8,9 +8,9 @@ import axios from "axios";
 export function ContactSection() {
   return (
     <React.Fragment>
-      <footer className="bg-black text-gray-300 px-10  pt-16 pb-4 rounded-t-4xl">
+      <footer className="bg-black text-gray-300 px-6 md:pl-20  pt-16 pb-4 rounded-t-4xl">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-2 gap-8 mb-10">
-          <div>
+          <div className="order-1 lg:order-3">
             <h3 className="text-xl font-semibold mb-8 text-white">
               Navigation
             </h3>
@@ -64,7 +64,7 @@ export function ContactSection() {
             </ul>
           </div>
 
-          <div className="order-4 lg:order-3">
+          <div className="order-4 lg:order-2">
             <h3 className="text-xl font-semibold mb-8 text-white">
               Contact Us:
             </h3>
@@ -82,7 +82,7 @@ export function ContactSection() {
               <span>Hira Street, Jeddah,Saudi Arabia. </span>
             </p>
           </div>
-          <div className="order-2 lg:order-4">
+          <div className="order-2 lg:order-1">
             <h3 className="text-xl font-semibold mb-6  text-white">
               Social Links
             </h3>
@@ -114,7 +114,7 @@ export function ContactSection() {
               }}
             >
               <Form className="flex gap-4  flex-col">
-                <div>
+                <div className=" md:w-[80%]">
                   <ShareInput
                     placeholder="Your Email here......"
                     name="email"
@@ -124,7 +124,7 @@ export function ContactSection() {
                 <div>
                   <ShareButton
                     type="submit"
-                    label="Subsribe US"
+                    label="Subsribe"
                     variant="transparent"
                     className="!px-8 !py-2 !text-white !bg-gradient-to-r from-[#f14f3e] to-[#fab768] hover:!text-white hover:!border-transparent border-[#fab768]"
                   />

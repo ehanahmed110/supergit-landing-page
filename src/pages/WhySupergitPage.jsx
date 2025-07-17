@@ -3,6 +3,7 @@ import { HeroChoose } from "../Components/WhyChoose/HeroChoose";
 import { CardsChoose } from "../Components/WhyChoose/CardsChoose";
 import { TestominalsChoose } from "../Components/WhyChoose/TestominalsChoose";
 import { CTASection } from "../Components/WhyChoose/CTASection";
+import { FaqChoose } from "../Components/WhyChoose/FaqChoose";
 
 export function WhySupergitPage() {
   return (
@@ -12,10 +13,10 @@ export function WhySupergitPage() {
           <HeroChoose />
           <CardsChoose />
           <TestominalsChoose />
+          <FaqChoose />
           <CTASection />
         </div>
       </div>
     </React.Fragment>
   );
 }
-
