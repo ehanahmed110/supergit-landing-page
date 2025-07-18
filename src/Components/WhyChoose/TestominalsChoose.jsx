@@ -44,17 +44,12 @@ export function TestominalsChoose() {
     },
   ];
 
-  const partners = [
-    "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/qimh3jbmtwv1gs5toxgb",
-    "https://thearabianmirror.com/wp-content/uploads/2025/04/Australia-21.jpg",
-    "https://seeklogo.com/images/S/saudi-banks-logo-5E702674C0-seeklogo.com.png",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLS5Ifh4KSCb2lh634Kl4QKhjs9Yq-YB-k0g&s"
-  ];
+
 
   return (
     <React.Fragment>
-      <div className="mb-20">
-        <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">
+      <div className="mb-10">
+        <h3 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
           What Our Clients{" "}
           <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">
             Say
@@ -79,23 +74,7 @@ export function TestominalsChoose() {
         </div>
       </div>
 
-      <div className="mb-14 text-center">
-        <h3 className="text-2xl font-bold text-gray-700 ">
-          Trusted by Leading SuperGit Providers
-        </h3>
-        <div className="flex items-center justify-center flex-wrap gap-6">
-          {partners.map((logo, i) => (
-            <img
-              key={i}
-              src={logo}
-              alt={`partner-${i}`}
-              className="h-22 w-30  transition cursor-pointer"
-              data-aos="fade-up"
-              data-aos-delay={i * 100}
-            />
-          ))}
-        </div>
-      </div>
+
     </React.Fragment>
   );
 }

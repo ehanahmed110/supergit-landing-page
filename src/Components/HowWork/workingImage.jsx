@@ -51,7 +51,7 @@ export function WorkingImage() {
 
   return (
     <React.Fragment>
-      <div className="bg-white py-16 px-4 md:px-12">
+      <div className="bg-white py-10 px-4 md:px-20">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 text-gray-800">
             How{" "}

@@ -49,7 +49,7 @@ export function FaqChoose() {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="mb-20">
+    <div className="mb-10">
       <h3
         data-aos="fade-up"
         className="text-3xl font-bold text-center text-gray-800 mb-8"
@@ -60,7 +60,7 @@ export function FaqChoose() {
         </span>
       </h3>
 
-      <div className="max-w-5xl mx-auto">
+      <div className="">
         {faqs.map((faq, index) => (
           <div
             key={index}

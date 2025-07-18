@@ -16,7 +16,7 @@ export function HIS() {
         <div>
           <FeaturedHis />
         </div>
-        <div className="px-4 md:px-20">
+        <div className="">
           <Testominal/>
         </div>
         <div>

@@ -54,11 +54,11 @@ export function FaqHowWork() {
 
   return (
     <React.Fragment>
-      <section className="mt-16 px-4 md:px-12 mb-24">
-        <div className="max-w-5xl mx-auto">
+      <section className="px-4 md:px-20 ">
+        <div className="">
           <h2
             data-aos="fade-up"
-            className="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-10"
+            className="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-4"
           >
             Frequently Asked{" "}
             <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">

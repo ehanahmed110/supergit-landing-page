@@ -55,7 +55,7 @@ export function CardsAbout() {
   ];
   return (
     <React.Fragment>
-      <div className="bg-white py-16 px-4 md:px-10 lg:px-20">
+      <div className="bg-white py-10 px-4 md:px-20">
         {/* <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-black text-4xl md:text-5xl font-bold mb-10">
             About{" "}
@@ -87,7 +87,7 @@ export function CardsAbout() {
           </p>
         </div> */}
 
-        <div className="px-6 md:px-10 py-10  bg-white flex  md:flex-row items-center gap-10 md:gap-16">
+        <div className="flex  md:flex-row items-center gap-10 md:gap-16">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent">
               About <span className="italic">US</span>
@@ -95,7 +95,7 @@ export function CardsAbout() {
             <h3 className="text-2xl font-semibold text-gray-800 mb-3">
               Smart Financial Management For Every Business
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 ">
               Supergit is a comprehensive accounting and business management
               platform designed to simplify your operations. Whether you're a
               small startup or a growing enterprise, Supergit helps you manage
@@ -116,7 +116,7 @@ export function CardsAbout() {
             />
           </div>
         </div>
-        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card, index) => (
             <div
               key={index}

@@ -40,7 +40,7 @@ export function CardsChoose() {
 
   return (
     <React.Fragment>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
         {features.map((item, i) => (
           <div
             key={i}
@@ -59,7 +59,7 @@ export function CardsChoose() {
         ))}
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-16">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-10">
         {stats.map((stat, i) => (
           <div
             data-aos="zoom-in"

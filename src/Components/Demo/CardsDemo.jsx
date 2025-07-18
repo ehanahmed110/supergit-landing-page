@@ -9,11 +9,11 @@ export function CardsDemo() {
     },
     {
       title: "Enterprise Resource Planning (ERP)",
-      desc: "Integrate HR, finance, supply chain & asset management to boost operational efficiency.",
+      desc: "Integrate HR, finance, supply chain & asset management to boost effecieny.",
       image: "https://supergitsa.com/images/erp.webp",
     },
     {
-      title: "NPHIES Integration Connect",
+      title: "NPHIES Integration Connect (NPHIES)",
       desc: "Seamlessly exchange data with NHIC, ensure eligibility & claims compliance.",
       image: "https://supergitsa.com/images/connect.webp",
     },
@@ -25,9 +25,9 @@ export function CardsDemo() {
   ];
   return (
     <React.Fragment>
-      <section class="bg-white py-16 px-6">
+      <section class="bg-white pt-2 pb-6 px-4 md:px-20">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold mb-6">Our Core Modules</h2>
+          <h2 class="text-3xl md:text-4xl  font-bold mb-6">Our Core <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">Modules</span> </h2>
           <p class="text-gray-600 max-w-5xl mx-auto text-center">
             SuperGit is a powerful, modular digital health platform
             purpose-built to support Saudi Arabia’s Vision 2030. From automating

@@ -8,26 +8,26 @@ import axios from "axios";
 export function ContactSection() {
   return (
     <React.Fragment>
-      <footer className="bg-black text-gray-300 px-6 md:pl-20  pt-16 pb-4 rounded-t-4xl">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-2 gap-8 mb-10">
-          <div className="order-1 lg:order-3">
-            <h3 className="text-xl font-semibold mb-8 text-white">
+      <footer className="bg-black text-gray-300 px-6 md:px-20  pt-16 pb-4 rounded-t-4xl">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-x-2 gap-8 mb-10">
+          <div className="order-1 lg:order-3 ">
+            <h3 className="text-xl font-semibold mb-8 text-white ">
               Navigation
             </h3>
-            <ul className="space-y-3 text-sm font-medium">
+            <ul className="space-y-3  font-medium">
               <li>
-                <a href="#hero" className="hover:text-white">
+                <a href="/" className="hover:text-white">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-white">
+                <a href="/about" className="hover:text-white">
                   About
                 </a>
               </li>
               <li>
-                <a href="#modules" className="hover:text-white">
-                  Modules
+                <a href="/services/his" className="hover:text-white">
+                  Our Services
                 </a>
               </li>
               <li>
@@ -40,7 +40,7 @@ export function ContactSection() {
 
           <div className="order-3 lg:order-2">
             <h3 className="text-xl font-semibold mb-8 text-white">Resources</h3>
-            <ul className="space-y-3 text-sm font-medium">
+            <ul className="space-y-3  font-medium">
               <li>
                 <a href="#faq" className="hover:text-white    ">
                   FAQs
@@ -64,21 +64,21 @@ export function ContactSection() {
             </ul>
           </div>
 
-          <div className="order-4 lg:order-2">
+          <div className="order-4 lg:order-4">
             <h3 className="text-xl font-semibold mb-8 text-white">
               Contact Us:
             </h3>
-            <p className="mb-5 text-sm flex space-x-1">
+            <p className="mb-5 flex items-center space-x-1">
               {" "}
               <i className="pi pi-envelope"></i>
               <span>info@supergit.com</span>
             </p>
-            <p className="mb-5 text-sm flex space-x-1">
+            <p className="mb-5 flex items-center space-x-1">
               <i className="pi pi-phone"></i> <span>+92-348-0095267 </span>{" "}
             </p>
-            <p className="mb-4 text-sm flex space-x-1">
+            <p className="mb-4 flex   space-x-1">
               {" "}
-              <i className="pi pi-map-marker"></i>
+              <i className="pi pi-map-marker mt-1"></i>
               <span>Hira Street, Jeddah,Saudi Arabia. </span>
             </p>
           </div>

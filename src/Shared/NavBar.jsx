@@ -122,7 +122,7 @@ export function NavBar() {
                     </div>
 
                     {/* Dropdown children */}
-                    <div className="absolute hidden group-hover:block bg-black text-white rounded  mt-1 z-50 w-46">
+                    <div className="absolute hidden group-hover:block bg-black text-white rounded  mt-1 z-50 w-34">
                       {link.children.map((child, index) => (
                         <NavLink
                           to={child.path}

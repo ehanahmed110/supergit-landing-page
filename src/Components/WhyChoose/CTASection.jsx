@@ -5,7 +5,7 @@ export function CTASection() {
 
     return (
         <React.Fragment>
-             <div className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] text-white rounded-xl p-8 text-center">
+             <div className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] text-white p-16 text-center">
         <h3 className="text-2xl font-semibold mb-2">
           Ready to Transform Your SuperGit Modules?
         </h3>

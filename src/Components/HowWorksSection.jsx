@@ -41,7 +41,7 @@ const steps = [
 export function HowWorksSection() {
   return (
     <React.Fragment>
-      <div className="min-h-screen px-10 py-20 bg-white">
+      <div className="min-h-screen px-4 md:px-20 pt-10 bg-white">
         <h2
           className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900"
           data-aos="fade-down"

@@ -3,7 +3,7 @@ import React from "react";
 export function HeroChoose() {
   return (
     <React.Fragment>
-      <div className="text-center mb-18">
+      <div className="text-center mb-14">
         <h2
           data-aos="fade-up"
           data-aos-delay="100"
@@ -21,7 +21,8 @@ export function HeroChoose() {
           className="text-gray-600 mt-4 max-w-4xl mx-auto"
         >
           Built for hospitals. Powered by innovation. Trusted by healthcare
-          leaders,ERP Enterprise Resourse Planning ,CDSS Clinical Desicion Support System  and Insurance Companies.
+          leaders,ERP Enterprise Resourse Planning ,CDSS Clinical Desicion
+          Support System and Insurance Companies.
         </p>
       </div>
     </React.Fragment>

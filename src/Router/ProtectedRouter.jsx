@@ -19,7 +19,7 @@ import { CDSS } from "../pages/Services/CDSS";
 export function ProtectedRouter() {
   return (
     <React.Fragment>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<LandingPage />} />

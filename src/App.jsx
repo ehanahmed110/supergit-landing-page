@@ -8,7 +8,7 @@ import { ProtectedRouter } from './Router/ProtectedRouter';
 function App() {
 useEffect(() => {
  AOS.init({
-  duration: 800,
+  duration: 600,
   delay: 200,
   easing: 'ease-in-out',
   once: true,

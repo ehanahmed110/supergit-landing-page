@@ -3,7 +3,7 @@ import myvideo from "../assets/WhatsApp Video 2025-07-08 at 10.49.58_52c4cdbe.mp
 export function DemoSection() {
   return (
     <React.Fragment>
-      <div className="md:min-h-screen px-10 py-20 bg-gray-50">
+      <div className="md:min-h-screen px-4 md:px-20 pt-10">
         <h2
           data-aos="fade-down"
           data-aos-delay="100"

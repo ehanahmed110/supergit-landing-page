@@ -49,7 +49,7 @@ const features = [
 export function WhyChooseSection() {
   return (
     <React.Fragment>
-      <div className=" px-10 py-24 bg-white mb-0">
+      <div className=" px-4 md:px-20 py-10 bg-white mb-0">
         <h2
           data-aos="fade-down"
           data-aos-delay="100"

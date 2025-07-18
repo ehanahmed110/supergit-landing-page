@@ -4,15 +4,15 @@ import { Forms } from "../Components/Contact/Form";
 export function ContactUsPage() {
   return (
     <React.Fragment>
-      <div className="min-h-screen bg-gray-50 py-12 px-4 md:px-12 mb-8">
-        <div className="max-w-7xl mx-auto">
+      <div className="min-h-screen bg-gray-50 pt-12 pb-2 px-4 md:px-20 mb-8">
+        <div className="">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 text-gray-800">
             Contact{" "}
             <span className="bg-gradient-to-r from-[#f14f3e] to-[#fab768] bg-clip-text text-transparent italic">
               Us
             </span>
           </h2>
-          <p className="text-center text-gray-600 max-w-xl mx-auto mb-14">
+          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-14">
             Have a question or need help? We’re here to assist you.Far far away,
             behind the word mountains, far from the countries Vokalia and
             Consonantia, there live the blind texts.

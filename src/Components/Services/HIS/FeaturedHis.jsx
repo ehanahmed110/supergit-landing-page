@@ -57,7 +57,7 @@ export function FeaturedHis() {
     <React.Fragment>
       <div className="px-4 ">
         <div
-          className="text-center max-w-3xl mx-auto mb-4 py-14 pb-8"
+          className="text-center max-w-3xl mx-auto mb-4 pt-8 pb-4 "
           data-aos="fade-down"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-3  text-gray-900">
